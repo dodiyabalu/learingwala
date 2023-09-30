@@ -1,46 +1,107 @@
 # learingwala
 learingwala
 
-<?php
-/**
- * Template for Blog
- *
- * @package     Astra
- * @author      Astra
- * @copyright   Copyright (c) 2020, Astra
- * @link        https://wpastra.com/
- * @since       Astra 1.0.0
- */
 
-?>
-<div <?php astra_blog_layout_class( 'blog-layout-1' ); ?>>
-	<div class="post-content <?php echo astra_attr( 'ast-grid-common-col' ); ?>" >
-		<?php astra_blog_post_thumbnail_and_title_order(); ?>
-		<div class="entry-content clear"
-		<?php
-				echo astra_attr(
-					'article-entry-content-blog-layout',
-					array(
-						'class' => '',
-					)
-				);
-				?>
-		>
-			<?php
-				astra_entry_content_before();
-				astra_the_excerpt();
-				astra_entry_content_after();
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-				wp_link_pages(
-					array(
-						'before'      => '<div class="page-links">' . esc_html( astra_default_strings( 'string-blog-page-links-before', false ) ),
-						'after'       => '</div>',
-						'link_before' => '<span class="page-link">',
-						'link_after'  => '</span>',
-					)
-				);
-				?>
-		</div><!-- .entry-content .clear -->
-	</div><!-- .post-content -->
-</div> <!-- .blog-layout-1 -->
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <!-- Simple lightbox CSS -->
+    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/favicon-16x16.png"
+    />
+
+    <title>JabTV Landing Page</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <!-- Dark/light theme switcher -->
+
+    <!-- Bars -->
+
+    <!-- Hero section -->
+
+    <!-- About section -->
+
+    <!-- Lightbox image gallery -->
+
+    <!-- Jab TV Stakeholders -->
+
+    <!-- Email subscription -->
+
+    <!-- Social icons -->
+
+    <!-- Scroll to top button -->
+
+    <!-- Web page script -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- Simple lightbox -->
+    <script src="assets/js/simple-lightbox.min.js"></script>
+    <script>
+      // Simple lightbox initializer
+    </script>
+  </body>
+</html>
+
+<nav>
+      <a href="#" class="logo">
+        <h1>
+          <span class="jab">Jab</span><span class="tv">TV</span
+          ><span class="fist">&#x1F44A;</span>
+        </h1>
+      </a>
+</nav>
+
+<ul>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" id="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stars" class="nav-link" id="nav-link">Boxing Stars</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stakeholders" class="nav-link" id="nav-link"
+            >stakeholders</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
+        </li>
+</ul>
+
+<div class="hamburger" id="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
